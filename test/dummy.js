@@ -1,5 +1,5 @@
-/*
- * React Data Model Definition
+/* Model Definition
+ * This will map api data to main store
  *
  */
 
