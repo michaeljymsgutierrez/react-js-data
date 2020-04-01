@@ -4,6 +4,15 @@
   const global = window || self;
 
   const reactData = {
+    store: {},
+
+    namespace: null,
+
+    host: window.location.origin,
+    setHost: function(host) {
+      this.host = host;
+    },
+
     model: function(schema) {
       /* Model attribute types
        * - string
@@ -11,6 +20,7 @@
        * - boolean
        * - date
        */
+      console.log(this.store);
       console.log(schema);
     }
   };
