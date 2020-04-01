@@ -5,6 +5,7 @@
 
   const reactData = {
     store: {},
+    schema: {},
 
     namespace: null,
 
@@ -20,8 +21,12 @@
        * - boolean
        * - date
        */
+
+      if (typeof schema.type === "string") {
+        this.store[schema.type] = {};
+      }
+
       console.log(this.store);
-      console.log(schema);
     }
   };
 

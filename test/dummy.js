@@ -4,7 +4,7 @@
  */
 
 this.reactData.model({
-  type: "user",
+  type: "users",
 
   firstName: "string",
   lastName: "string",
