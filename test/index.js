@@ -5,7 +5,7 @@
 
   const reactData = {
     model: function(schema) {
-      /* Schema Types
+      /* Model attribute types
        * - string
        * - number
        * - boolean

@@ -1,4 +1,7 @@
-const _this = window;
+/*
+ * React Data Model Definition
+ *
+ */
 
 this.reactData.model({
   type: "user",
