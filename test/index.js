@@ -4,8 +4,10 @@
   const global = window || self;
 
   const reactData = {
-    store: {},
-    schema: {},
+    store: {
+      collections: {},
+      schemas: {}
+    },
 
     namespace: null,
 
@@ -23,12 +25,11 @@
        */
 
       if (typeof schema.type === "string") {
-        this.store[schema.type] = [];
-        this.schema[schema.type] = schema;
+        this.store.collections[schema.type] = [];
+        this.store.schemas[schema.type] = schema;
       }
 
       console.log(this.store);
-      console.log(this.schema);
     }
   };
 
