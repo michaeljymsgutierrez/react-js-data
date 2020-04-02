@@ -23,7 +23,7 @@
        */
 
       if (typeof schema.type === "string") {
-        this.store[schema.type] = {};
+        this.store[schema.type] = [];
       }
 
       console.log(this.store);
