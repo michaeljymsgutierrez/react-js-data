@@ -24,9 +24,11 @@
 
       if (typeof schema.type === "string") {
         this.store[schema.type] = [];
+        this.schema[schema.type] = schema;
       }
 
       console.log(this.store);
+      console.log(this.schema);
     }
   };
 
