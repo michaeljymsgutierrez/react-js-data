@@ -6,6 +6,9 @@
 this.reactData.model({
   type: "users",
 
+  profile: { belongsTo: "profile" },
+  addresses: { hasMany: "address" },
+
   firstName: "string",
   lastName: "string",
   birthDate: "date",
