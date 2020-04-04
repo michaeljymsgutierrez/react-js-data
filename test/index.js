@@ -25,6 +25,9 @@
        * - number
        * - boolean
        * - date
+       * Relationship
+       * - hasMany
+       * - belongsTo
        */
 
       if (typeof schema.type === "string") {
