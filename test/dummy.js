@@ -6,8 +6,8 @@
 this.reactData.model({
   type: "users",
 
-  profile: { belongsTo: "profile" },
-  addresses: { hasMany: "address" },
+  profile: { belongsTo: "profiles" },
+  addresses: { hasMany: "addresses" },
 
   firstName: "string",
   lastName: "string",
