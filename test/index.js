@@ -4,16 +4,19 @@
   const global = window || self;
 
   const reactData = {
-    store: {
-      collections: {},
-      schemas: {}
-    },
-
     namespace: null,
 
     host: window.location.origin,
     setHost: function(host) {
       this.host = host;
+    },
+
+    store: {
+      collections: {},
+      schemas: {},
+      query: function(type, args) {
+        console.log(type, args);
+      }
     },
 
     model: function(schema) {
