@@ -5,6 +5,9 @@
 
   const reactData = {
     namespace: null,
+    setNamespace: function(namespace) {
+      this.namespace = namespace;
+    },
 
     host: window.location.origin,
     setHost: function(host) {
