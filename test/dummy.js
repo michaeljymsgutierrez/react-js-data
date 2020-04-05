@@ -1,8 +1,12 @@
-/* Model Definition
- * This will map api data to main store
+/* Namespace alter/init
  *
  */
 
+this.reactData.setNamespace("api/v1");
+
+/* Model Definition
+ * This will map api data to main store
+ */
 this.reactData.model({
   type: "users",
 
