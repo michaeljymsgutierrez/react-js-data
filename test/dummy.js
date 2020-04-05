@@ -1,12 +1,8 @@
-/* Namespace alter/init
- *
- */
-
+// Namespace alter/init
 this.reactData.setNamespace("api/v1");
 
-/* Model Definition
- * This will map api data to main store
- */
+// Model Definition
+// This will map api data to main store
 this.reactData.model({
   type: "users",
 
@@ -19,3 +15,6 @@ this.reactData.model({
   mobileNumber: "number",
   employmentStatus: "boolean"
 });
+
+// Store query invoke
+this.reactData.store.query("users", {});
