@@ -22,6 +22,10 @@
       }
     },
 
+    ajax: function(options) {
+      console.log(options);
+    },
+
     model: function(schema) {
       /* Model attribute types
        * - string
