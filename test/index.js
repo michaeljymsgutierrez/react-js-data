@@ -3,12 +3,22 @@
 (function() {
   const global = window || self;
 
-  const reactData = {
+  /* Namespace Privacy
+   *
+   */
+  const _namespace = {
     namespace: null,
+
     setNamespace: function(namespace) {
       this.namespace = namespace;
     },
 
+    getNamespace: function() {
+      return this.namespace;
+    }
+  };
+
+  const _reactData = {
     host: window.location.origin,
     setHost: function(host) {
       this.host = host;
@@ -18,12 +28,12 @@
       collections: {},
       schemas: {},
       query: function(type, args) {
-        console.log(type, args);
+        //console.log(type, args);
       }
     },
 
     ajax: function(options) {
-      console.log(options);
+      //console.log(options);
     },
 
     model: function(schema) {
@@ -41,8 +51,6 @@
         this.store.collections[schema.type] = [];
         this.store.schemas[schema.type] = schema;
       }
-
-      console.log(this.store);
     }
   };
 
