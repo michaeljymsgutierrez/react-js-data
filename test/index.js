@@ -33,6 +33,13 @@
     }
   };
 
+  /* AJAX 
+   *
+   */
+  const _ajax = function(options) {
+    console.log(options);
+  };
+
   const _reactData = {
     setNamespace: _namespace.setNamespace,
     getNamespace: _namespace.getNamespace,
@@ -46,10 +53,6 @@
       query: function(type, args) {
         //console.log(type, args);
       }
-    },
-
-    ajax: function(options) {
-      //console.log(options);
     },
 
     model: function(schema) {
