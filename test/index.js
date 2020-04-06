@@ -33,7 +33,7 @@
     }
   };
 
-  /* AJAX 
+  /* AJAX
    *
    */
   const _ajax = function(options) {
