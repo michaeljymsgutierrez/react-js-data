@@ -19,6 +19,9 @@
   };
 
   const _reactData = {
+    setNamespace: _namespace.setNamespace,
+    getNamespace: _namespace.getNamespace,
+
     host: window.location.origin,
     setHost: function(host) {
       this.host = host;
@@ -55,6 +58,6 @@
   };
 
   if (typeof global !== undefined) {
-    global.reactData = reactData;
+    global.reactData = _reactData;
   }
 })();
