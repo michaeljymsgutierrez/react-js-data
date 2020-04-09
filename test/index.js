@@ -6,7 +6,7 @@
   // Configuration here
   const _config = {
     namespace: null,
-    host: null
+    host: window.location.origin
   };
 
   // Namespace setter & getter
@@ -47,7 +47,7 @@
       schemas: {},
       query: function(type, args) {
         console.log(type, args);
-        console.log(_namespace.getNamespace());
+        console.log(_namespace.getNamespace(), _host.getHost());
       }
     },
 
