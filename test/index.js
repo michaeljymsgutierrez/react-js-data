@@ -31,9 +31,22 @@
     }
   };
 
+  // URL
+  const _targetURL = function() {
+    const namespace =
+      typeof _namespace.getNamespace() === "string"
+        ? `/${_namespace.getNamespace()}`
+        : "";
+
+    return `${_host.getHost()}${namespace}`;
+  };
+
   // AJAX Private
   const _ajax = function(options) {
-    console.log(options);
+    if (typeof global.fetch === "function") {
+      //console.log(options);
+      console.log(_targetURL());
+    }
   };
 
   const _reactData = {
