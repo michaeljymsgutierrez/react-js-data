@@ -3,39 +3,34 @@
 (function() {
   const global = window || self;
 
-  /* Namespace Privacy
-   *
-   */
-  const _namespace = {
+  // Configuration here
+  const _config = {
     namespace: null,
+    host: null
+  };
 
+  // Namespace setter & getter
+  const _namespace = {
     setNamespace: function(namespace) {
-      this.namespace = namespace;
+      _config.namespace = namespace;
     },
 
     getNamespace: function() {
-      return this.namespace;
+      return _config.namespace;
     }
   };
 
-  /* Host Privacy
-   *
-   */
+  // Host setter & getter
   const _host = {
-    host: window.location.origin,
-
     setHost: function(host) {
-      this.host = host;
+      _config.host = host;
     },
 
     getHost: function() {
-      return this.host;
+      return _config.host;
     }
   };
 
-  /* AJAX
-   *
-   */
   const _ajax = function(options) {
     console.log(options);
   };
@@ -51,20 +46,20 @@
       collections: {},
       schemas: {},
       query: function(type, args) {
-        //console.log(type, args);
+        console.log(type, args);
+        console.log(_namespace.getNamespace());
       }
     },
 
     model: function(schema) {
-      /* Model attribute types
-       * - string
-       * - number
-       * - boolean
-       * - date
-       * Relationship
-       * - hasMany
-       * - belongsTo
-       */
+      // Model attribute types
+      // - string
+      // - number
+      // - boolean
+      // - date
+      // Relationship
+      // - hasMany
+      // - belongsTo
 
       if (typeof schema.type === "string") {
         this.store.collections[schema.type] = [];
