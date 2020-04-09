@@ -31,6 +31,7 @@
     }
   };
 
+  // AJAX Private
   const _ajax = function(options) {
     console.log(options);
   };
@@ -46,8 +47,8 @@
       collections: {},
       schemas: {},
       query: function(type, args) {
-        console.log(type, args);
-        console.log(_namespace.getNamespace(), _host.getHost());
+        return _ajax({ type, args });
+        //console.log(type, args);
       }
     },
 
