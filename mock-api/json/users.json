@@ -1,0 +1,224 @@
+{
+  "data": {
+    "id": 1437554,
+    "type": "users",
+    "attributes": {
+      "profile-id": 113690,
+      "profile-type": "CustomerProfile",
+      "time-zone": "Singapore",
+      "time-zone-iana-olson": "Asia/Singapore",
+      "time-zone-utc-offset": "+08:00",
+      "created-at": "2019-04-17T06:35:17.109Z",
+      "updated-at": "2020-03-30T13:14:31.462Z"
+    },
+    "relationships": {
+      "profile": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/customer-profile"
+        },
+        "data": { "type": "customer-profiles", "id": 113690 }
+      },
+      "area": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/area"
+        },
+        "data": { "type": "areas", "id": 4 }
+      },
+      "last-completed-job-order": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/last-completed-job-order"
+        },
+        "data": null
+      },
+      "last-active-job-order": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/last-active-job-order"
+        },
+        "data": null
+      },
+      "items": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/items"
+        },
+        "data": [
+          { "type": "items", "id": 13631668 },
+          { "type": "items", "id": 13631682 },
+          { "type": "items", "id": 13631676 }
+        ]
+      },
+      "addresses": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/addresses"
+        },
+        "data": [{ "type": "addresses", "id": 91023 }]
+      },
+      "job-orders": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/job-orders"
+        }
+      },
+      "checkouts": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/checkouts"
+        }
+      },
+      "consignments": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/consignments"
+        }
+      },
+      "access-tokens": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/access-tokens"
+        },
+        "data": [{ "type": "access-tokens", "id": 41754 }]
+      },
+      "favorites": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/favorites"
+        },
+        "data": []
+      },
+      "role": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/role"
+        },
+        "data": null
+      },
+      "activities": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/activities"
+        }
+      },
+      "from-notifications": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/from-notifications"
+        }
+      },
+      "to-notifications": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/to-notifications"
+        }
+      },
+      "consignment-funds": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/consignment-funds"
+        }
+      },
+      "from-consignment-funds": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/from-consignment-funds"
+        }
+      },
+      "to-consignment-funds": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/to-consignment-funds"
+        }
+      },
+      "credit-approvals": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/credit-approvals"
+        }
+      },
+      "to-credit-approvals": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/to-credit-approvals"
+        }
+      },
+      "reviewed-by-credit-approvals": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/reviewed-by-credit-approvals"
+        }
+      },
+      "deliverables-reserved": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/deliverables-reserved"
+        }
+      },
+      "checkout-credit-card-approvals": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/checkout-credit-card-approvals"
+        }
+      },
+      "added-deliverables": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/added-deliverables"
+        }
+      },
+      "consignments-assigned-to-others": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/consignments-assigned-to-others"
+        }
+      },
+      "completed-checkouts": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/completed-checkouts"
+        }
+      },
+      "late-job-orders": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/late-job-orders"
+        }
+      },
+      "late-job-order-summaries": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/late-job-order-summaries"
+        }
+      },
+      "cancelled-job-orders": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/cancelled-job-orders"
+        }
+      },
+      "chat-messages": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/chat-messages"
+        }
+      },
+      "destroyed-chat-messages": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/destroyed-chat-messages"
+        }
+      },
+      "todays-job-order-incentives": {
+        "links": {
+          "related": "https://www.metromart.com/api/v1/users/1437554/todays-job-order-incentives"
+        }
+      }
+    },
+    "links": { "self": "https://www.metromart.com/api/v1/users/1437554" }
+  },
+  "included": [
+    {
+      "id": 91023,
+      "type": "addresses",
+      "attributes": {
+        "address1": "4984, P. Guanzon, Makati, Metro Manila, Philippines",
+        "address2": "Avalu Residences",
+        "city": null,
+        "landmark": "",
+        "kind": "home",
+        "label": "4984, P. Guanzon",
+        "latitude": "14.56587",
+        "longitude": "121.030624",
+        "created-at": "2020-02-10T12:10:45.365Z",
+        "updated-at": "2020-02-10T12:10:45.365Z"
+      },
+      "relationships": {
+        "user": {
+          "links": {
+            "related": "https://www.metromart.com/api/v1/addresses/91023/user"
+          },
+          "data": { "type": "users", "id": 1437554 }
+        },
+        "area": {
+          "links": {
+            "related": "https://www.metromart.com/api/v1/addresses/91023/area"
+          },
+          "data": { "type": "areas", "id": 4 }
+        }
+      },
+      "links": { "self": "https://www.metromart.com/api/v1/addresses/91023" }
+    }
+  ]
+}
