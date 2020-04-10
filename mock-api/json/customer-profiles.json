@@ -48,25 +48,25 @@
     "relationships": {
       "user": {
         "links": {
-          "related": "https://www.metromart.com/api/v1/customer-profiles/113690/user"
+          "related": "https://www.mock-api.com/api/v1/customer-profiles/113690/user"
         },
         "data": { "type": "users", "id": 1437554 }
       },
       "vip-marked-by-user": {
         "links": {
-          "related": "https://www.metromart.com/api/v1/customer-profiles/113690/vip-marked-by-user"
+          "related": "https://www.mock-api.com/api/v1/customer-profiles/113690/vip-marked-by-user"
         },
         "data": null
       },
       "suspicious-marked-by-user": {
         "links": {
-          "related": "https://www.metromart.com/api/v1/customer-profiles/113690/suspicious-marked-by-user"
+          "related": "https://www.mock-api.com/api/v1/customer-profiles/113690/suspicious-marked-by-user"
         },
         "data": null
       }
     },
     "links": {
-      "self": "https://www.metromart.com/api/v1/customer-profiles/113690"
+      "self": "https://www.mock-api.com/api/v1/customer-profiles/113690"
     }
   }
 }
