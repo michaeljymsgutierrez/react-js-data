@@ -42,18 +42,23 @@
   };
 
   // AJAX Private
-  const _ajax = function(options) {
+  const _ajax = async function(options) {
     const headers = {
       //"Content-Type": "application/vnd.api+json"
     };
 
-    //console.log(options);
-
     if (typeof global.fetch === "function") {
-      global.fetch(`${_targetURL()}/${options.type}.json`, {
-        method: options.method,
-        headers: headers
-      });
+      const response = await global.fetch(
+        `${_targetURL()}/${options.type}.json`,
+        {
+          method: options.method,
+          headers: headers
+        }
+      );
+
+      const result = await response.json();
+
+      return result;
     }
   };
 
@@ -69,6 +74,7 @@
       schemas: {},
       query: function(type, args) {
         const method = "GET";
+
         return _ajax({ type, args, method });
       }
     },
