@@ -43,9 +43,17 @@
 
   // AJAX Private
   const _ajax = function(options) {
+    const headers = {
+      //"Content-Type": "application/vnd.api+json"
+    };
+
+    //console.log(options);
+
     if (typeof global.fetch === "function") {
-      //console.log(options);
-      console.log(_targetURL());
+      global.fetch(`${_targetURL()}/${options.type}.json`, {
+        method: options.method,
+        headers: headers
+      });
     }
   };
 
@@ -60,8 +68,8 @@
       collections: {},
       schemas: {},
       query: function(type, args) {
-        return _ajax({ type, args });
-        //console.log(type, args);
+        const method = "GET";
+        return _ajax({ type, args, method });
       }
     },
 
