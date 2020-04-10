@@ -4,21 +4,21 @@
   "description": "ReactJS data - JSON-API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/http-server/bin/http-server test/ ",
+    "serve": "./node_modules/http-server/bin/http-server mock-api/json/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/michaeljymsgutierrez/react-js-data.git"
   },
-  "keywords": [
-    "reactjs",
-    "data",
-    "json-api"
-  ],
+  "keywords": ["reactjs", "data", "json-api"],
   "author": "Michael Jyms Gutierrez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/michaeljymsgutierrez/react-js-data/issues"
   },
-  "homepage": "https://github.com/michaeljymsgutierrez/react-js-data#readme"
+  "homepage": "https://github.com/michaeljymsgutierrez/react-js-data#readme",
+  "devDependencies": {
+    "http-server": "^0.12.1"
+  }
 }
