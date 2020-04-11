@@ -49,7 +49,7 @@
 
     if (typeof global.fetch === "function") {
       const response = await global.fetch(
-        `${_targetURL()}/${options.type}.json`,
+        `${_targetURL()}/${options.type}`,
         {
           method: options.method,
           headers: headers
