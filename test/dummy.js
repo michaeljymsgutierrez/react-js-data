@@ -1,5 +1,5 @@
 // Namespace alter/init
-//this.reactData.setNamespace("api/v1");
+this.reactData.setNamespace("api/v1");
 // Host alter/init
 this.reactData.setHost(
   `${window.location.protocol}//${window.location.hostname}:8081`
