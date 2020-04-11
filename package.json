@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/http-server/bin/http-server test/ ",
-    "serve": "./node_modules/http-server/bin/http-server mock-api/json/"
+    "serve": "./node_modules/http-server/bin/http-server mock-api/json/ -p 8081"
   },
   "repository": {
     "type": "git",
