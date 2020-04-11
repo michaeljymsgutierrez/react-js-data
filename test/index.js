@@ -44,7 +44,7 @@
   // AJAX Private
   const _ajax = async function(options) {
     const headers = {
-      //"Content-Type": "application/vnd.api+json"
+      "Content-Type": "application/vnd.api+json"
     };
 
     if (typeof global.fetch === "function") {
