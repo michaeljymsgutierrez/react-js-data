@@ -47,6 +47,8 @@
       "Content-Type": "application/vnd.api+json"
     };
 
+    const queryString = null;
+
     if (typeof global.fetch === "function") {
       const response = await global.fetch(
         `${_targetURL()}/${options.type}`,
@@ -72,6 +74,7 @@
     store: {
       collections: {},
       schemas: {},
+
       query: function(type, args) {
         const method = "GET";
 
