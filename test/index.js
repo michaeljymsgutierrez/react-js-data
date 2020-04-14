@@ -47,11 +47,15 @@
       "Content-Type": "application/vnd.api+json"
     };
 
-    const queryString = null;
+    let queryString = "?";
+
+    if (typeof options.args.include !== undefined) {
+      queryString += `include=${options.args.include}`;
+    }
 
     if (typeof global.fetch === "function") {
       const response = await global.fetch(
-        `${_targetURL()}/${options.type}`,
+        `${_targetURL()}/${options.type}${queryString}`,
         {
           method: options.method,
           headers: headers
