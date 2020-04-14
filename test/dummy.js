@@ -21,4 +21,4 @@ this.reactData.model({
 });
 
 // Store query invoke
-this.reactData.store.query("users", {});
+this.reactData.store.query("users", { include: "addresses" });
