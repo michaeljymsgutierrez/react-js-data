@@ -62,9 +62,9 @@
         }
       );
 
-      const result = await response.json();
+      const results = await response.json();
 
-      return result;
+      return results;
     }
   };
 
@@ -79,10 +79,11 @@
       collections: {},
       schemas: {},
 
-      query: function(type, args) {
+      query: async function(type, args) {
         const method = "GET";
+        const queryResults = await _ajax({ type, args, method });
 
-        return _ajax({ type, args, method });
+        return queryResults;
       }
     },
 
@@ -97,7 +98,7 @@
       // - belongsTo
 
       if (typeof schema.type === "string") {
-        this.store.collections[schema.type] = [];
+        this.store.collections[schema.type] = { data: [], ids: [] };
         this.store.schemas[schema.type] = schema;
       }
     }

@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(helmet());
 app.use(morgan("dev"));
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.json({ success: 200 });
 });
 
