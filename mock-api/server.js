@@ -26,12 +26,20 @@ const customerProfiles = JSON.parse(
   fs.readFileSync(`${currentPath}/json/customer-profiles.json`).toString()
 );
 
+const customerProfile = JSON.parse(
+  fs.readFileSync(`${currentPath}/json/customer-profile.json`).toString()
+);
+
 app.get("/api/v1/users", (req, res) => {
   res.json(users);
 });
 
 app.get("/api/v1/customer-profiles", (req, res) => {
   res.json(customerProfiles);
+});
+
+app.get("/api/v1/customer-profiles/:customer_id", (req, res) => {
+  res.json(customerProfile);
 });
 
 app.listen("8081", () => {
