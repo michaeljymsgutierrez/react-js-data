@@ -79,9 +79,26 @@
       collections: {},
       schemas: {},
 
+      // Push payload function will receive args:
+      // type - to identify what collections the data belongs
+      // payload - the actual data to push on the store collection
+      pushPayload: function(type, payload) {
+        const { data, ids } = this.collections[type];
+
+        payload.data.forEach(payload_data => {
+          const id_not_exist = Boolean(ids.indexOf(payload_data.id) === -1);
+          if (id_not_exist === true) {
+            ids.push(payload_data.id);
+            data.push(payload_data);
+          }
+        });
+      },
+
       query: async function(type, args) {
         const method = "GET";
         const queryResults = await _ajax({ type, args, method });
+
+        this.pushPayload(type, queryResults);
 
         return queryResults;
       }
