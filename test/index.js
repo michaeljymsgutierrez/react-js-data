@@ -121,7 +121,9 @@
     }
   };
 
+
   if (typeof global !== undefined) {
     global.reactData = _reactData;
+    Object.freeze(global.reactData);
   }
 })();

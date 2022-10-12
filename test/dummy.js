@@ -8,7 +8,7 @@ this.reactData.setHost(
 // Model Definition
 // This will map api data to main store
 this.reactData.model({
-  type: "users",
+  type: "customer-profiles",
 
   profile: { belongsTo: "profiles" },
   addresses: { hasMany: "addresses" },
@@ -21,4 +21,7 @@ this.reactData.model({
 });
 
 // Store query invoke
-this.reactData.store.query("users", { include: "addresses" });
+this.reactData.store.query("customer-profiles", { include: "addresses" });
+this.reactData.store.query("customer-profiles", { include: "addresses" });
+
+console.log(this.reactData.store);
