@@ -101,6 +101,15 @@
         this.pushPayload(type, queryResults);
 
         return queryResults;
+      },
+
+      findRecord: async function(type, args) {
+        const method = "GET";
+        const queryResults = await _ajax({ type, args, method });
+
+        this.pushPayload(type, queryResults);
+
+        return queryResults;
       }
     },
 
