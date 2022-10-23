@@ -48,6 +48,7 @@
     };
 
     let queryString = "?";
+    let queryId = options.id ? `/${options.id}` : '';
 
     if (typeof options.args.include !== undefined) {
       queryString += `include=${options.args.include}`;
@@ -55,7 +56,7 @@
 
     if (typeof global.fetch === "function") {
       const response = await global.fetch(
-        `${_targetURL()}/${options.type}${queryString}`,
+        `${_targetURL()}/${options.type}${queryId}${queryString}`,
         {
           method: options.method,
           headers: headers
@@ -96,7 +97,7 @@
 
       query: async function(type, args) {
         const method = "GET";
-        const queryResults = await _ajax({ type, args, method });
+        const queryResults = await _ajax({ type, id, args, method });
 
         this.pushPayload(type, queryResults);
 
